@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourisme Interne</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/Voyage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script
+     src="https://code.jquery.com/jquery-3.6.1.js"></script>
+     <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            });
+        });
+     </script>
+     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+     <link rel="shortcut icon" type="x-icon" href="image/logoMaroc.png">
+ 
+</head>
+<body>
+    <section>
+        <header class="main-head">
+            <nav>
+                <h1 id="logo">Maroc</h1>
+        
+                <ul class="show">
+                    <li><a class ="active" href="#">Accueil</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="Index.html">Cards</a></li>
+                    
+                   
+        
+                </ul>
+                <label id="icon">
+                    <i class="fas fa-bars"></i>
+                </label>
+        
+            </nav>
+          </header>
+    </section>
+ 
+  <section></section>
+
+  <section>
+      <div class="silder" >
+        <img src="image/Chefchaouen.jpg" alt="img1"class="img_slider active"/>
+        <img src="image/dakhla.jpg" alt="img2" class="img_slider"/>
+        <img src="image/jama-el-fnaa.jpg" alt="img3"class="img_slider"/>
+        <img src="image/tanger.jpg" alt="img4"class="img_slider"/>
+         <div class="suivant">
+            <i class="fa-solid fa-chevron-right"></i>
+         </div>
+        <div class="precedant">
+            <i class="fa-solid fa-chevron-left"></i></div>
+        
+      </div>
+  </section>
+  <script src="js/Voyage.js">
+    
+  </script>
+        
+ 
+
+
+<section >
+    <div class="container1" id="container1">
+        <div class="form-container "></div>
+
+    </div>
+    
+    <!-- <div class="clt">
+        <h1>Clients</h1>
+        <form action="#" method="post"> 
+            <div class=""></div>
+                <div class="corps-form">
+                  <div class="gauche">
+                     <div class="boite">
+                      <label>Nom : </label>
+                      <input type="text" class="nom" id="nom"><br>
+                     </div>
+                     <div class="boite">
+                      <label>Email : </label>
+                      <input type="text" class="email" id="email"><br>
+                     </div>
+                    <div class="boite">
+                     <label>Message : </label>
+                     <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                </div>
+
+                </div>
+            </div>
+         <div class="droite">
+          <textarea name="afficher" class="affiche" id="aff" cols="50" rows="10"></textarea>
+         </div>
+         <div class="btn" >
+            <input type="button" id="submit" onclick="submitData()" value="Afficher">
+         </div>
+        </form>
+       
+
+  
+    </div>
+    
+   
+     -->
+     <div class="contact_section layout_padding">
+        <div class="container1">
+            <h1 class="contact_taital">Clients</h1>
+            <div class="email_text">
+               <div class="form-group">
+                  <input type="text" class="email-bt" placeholder="Name" id="nom" name="Name">
+               </div>
+               <div class="form-group">
+                  <input type="text" class="email-bt" placeholder="Phone Numbar" id="phone" name="Number">
+               </div>
+               <div class="form-group">
+                  <input type="text" class="email-bt" placeholder="Email" id="email" name="Email">
+               </div>
+               <div class="form-group">
+                  <textarea class="massage-bt" placeholder="Massage" rows="5" id="msg" name="Massage"></textarea>
+               </div>
+               <!-- /*<div class="droite">
+                <textarea name="afficher" class="affiche" id="aff" cols="50" rows="10"></textarea>
+               </div>*/ -->
+               <!-- <div class="btn" >
+                  <input type="button" id="submit" onclick="submitData()" value="Afficher">
+               </div> -->
+               <div class="send_btn" id="submit" onclick="submitData()"><a href="#">Afficher</a></div>
+            </div>
+               <div id="showData"></div>
+            
+               
+            </div>
+        </div>
+        </div>
+</section>
+<section>
+    <!-- <div class="cards">
+        <div class="card-card1">
+            <div class="containerCard">
+                <img src="image/Chefchaouen.jpg" alt="img1">
+            </div>
+            <div class="details">
+                <h3>Chefchaouen</h3>
+                <p>Chefchaouen est une petite ville de montagne du nord-est du Maroc au cadre superbe, pleine de charme et d’authenticité et à l’écart des grands centres touristiques. Au détour de ses ruelles au décor méditerranéen de maisons blanchies à la chaux agrémentées de bleu de smalt, vous découvrirez des monuments historiques comme la grande mosquée "El Masjid El Adamaa". Et le soir, en grimpant sur les hauteurs de l’hôtel Atlas, vous pourrez admirer un magnifique coucher de soleil sur la ville et la vallée.</p>
+            </div>
+        </div>
+        <div class="card-card2">
+            <div class="containerCard">
+                <img src="image/dakhla.jpg" alt="img1">
+            </div>
+            <div class="details">
+                <h3>Dakhla</h3>
+                <p>Dakhla est une ville située dans le sud du Maroc, anciennement appelée Villa Cisneros en hommage à Francisco Jiménez de Cisneros.</p>
+            </div>
+        </div>
+        <div class="card-card2">
+            <div class="containerCard">
+                <img src="image/tanger.jpg" alt="img1">
+            </div>
+            <div class="details">
+                <h3>Tanger</h3>
+                <p>Tanger a longtemps été une importante place stratégique. Avec ses deux mille cinq cents ans d’existence, elle compte une population de 974 000 habitants aujourd’hui, c’est l’une des plus anciennes villes d’Afrique du Nord. </p>
+            </div>
+        </div>
+    </div> -->
+
+</section>
+<!-- <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Get help</h4>
+                <ul>
+                 <li><a href="#">Accueil</a></li>
+                 <li><a href="#">Clients</a></li>
+                 <li><a href="#">Cards</a></li>
+               </ul>
+
+            </div>
+            <div class="footer-width link">
+                <h4>Follow us</h4>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+             
+
+            </div>
+        </div>
+    </div> -->
+<!-- </footer> -->
+
+
+    <footer>
+        <ul class="icons">
+            <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Clients</a></li>
+                <li><a href="#">Cards</a></li>
+               
+        </ul>
+        <button id="mybtn" onclick="darkmode()"><i class="bi bi-moon-fill"></i></button>
+            <div class="footer-copyright">
+                <p>Copyright @ 2022 All Rights Reserved.</p>
+            </div>
+            
+    </footer>
+
+  <!-- cards -->
+  <!-- <div class="container">
+    <img src="" id="img"> -->
+
+  <!-- </div> -->
+   
+
+
+
+
+
+
+
+   
+  
+    
+   
+
+
+   
+
+<script src="js/Voyage.js"></script>
+</body>
+</html>
